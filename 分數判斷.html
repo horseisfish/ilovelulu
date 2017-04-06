@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>分數判斷</title>
+</head>
+<body>
+<h1>輸入分數</h1>
+<input type="number" id="score">
+<button onclick="fail()">submit</button>
+<p id="result"></p>
+</body>
+<script >
+    function fail(){
+
+    var x=document.getElementById('score').value;
+    
+	if (parseInt(x)>60) {
+		document.getElementById('result').innerHTML = "及格";
+	}
+	else{
+		document.getElementById('result').innerHTML ="不及格";
+	}
+}
+
+</script>
+
+</html>

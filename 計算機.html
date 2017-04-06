@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>計算機</title>
+	<style>
+	
+		h1 {
+			text-align: left;
+			color: yellow;
+			font-size: 40px
+
+		}
+		.input{
+			text-align: left;
+			width: 300px;
+			height: 50px
+
+		}
+
+
+
+
+
+	</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+
+<h1>X</h1>
+<input class="input" id="p1" type="number" ><br>
+<h1>Y</h1>
+<input class="input" id="p2" type="number" ><br>
+<button onclick="plus()" >plus</button> 
+<button onclick="minus()" >min</button> 
+<button onclick="mul()" >mul</button>
+<button onclick="div()" >div</button>  
+<p id="is"></p>
+
+</body>
+
+<script>
+	var x=3+4
+	document.getElementById('my').innerHTML = x;
+
+    var y=5-6
+    document.getElementById('love').innerHTML = y;
+
+
+        
+    function plus(p1,p2){
+    	var p1=document.getElementById('p1').value;
+    	var p2=document.getElementById('p2').value;
+
+    	document.getElementById('is').innerHTML=parseInt(p1)+parseInt(p2);
+    }
+    
+    function minus(p1,p2){
+    	var p1=document.getElementById('p1').value;
+    	var p2=document.getElementById('p2').value;
+
+    	document.getElementById('is').innerHTML=parseInt(p1)-parseInt(p2);
+    }
+
+    function mul(p1,p2){
+    	var p1=document.getElementById('p1').value;
+    	var p2=document.getElementById('p2').value;
+
+    	document.getElementById('is').innerHTML=parseInt(p1)*parseInt(p2);
+    }
+
+    function div(p1,p2){
+    	var p1=document.getElementById('p1').value;
+    	var p2=document.getElementById('p2').value;
+
+    	document.getElementById('is').innerHTML=parseInt(p1)/parseInt(p2);
+    }
+</script>
+
+</html>
